@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="tools" name="points_filter" type="points_filter" output="screen"/>
+  <node pkg="rosbag" name="bag" type="play" args="--clock /home/david/2.bag"/>
+   <node pkg="rviz" name="rviz" type="rviz"/>
+</launch>
