@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <launch>
-  <node pkg="global_localization" name="gl" type="global_localization.py" output="screen"/>
+  <arg name="venv" value="/home/david/venv/bin/python3"/>
+  <node pkg="global_localization" name="gl" type="global_localization.py" output="screen" launch-prefix="$(arg venv)"/>
   <!-- <node pkg="rosbag" name="bag" type="play" args="-clock /home/david/2.bag"/> -->
   <!-- <node pkg="rviz" name="rviz" type="rviz"/> -->
 </launch>

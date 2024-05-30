@@ -5,6 +5,7 @@
 import rospy
 import numpy as np
 import sys
+import torch
 
 print(sys.path)
 
@@ -15,6 +16,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
