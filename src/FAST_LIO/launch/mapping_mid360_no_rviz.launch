@@ -14,6 +14,10 @@
 	<param name="cube_side_length" type="double" value="1000" />
 	<param name="runtime_pos_log_enable" type="bool" value="0" />
 
+  <arg name="venv" value="/root/venv/bin/python3"/>
+
+  <node pkg="fast_lio" name="cd" type="construct_database.py" output="screen" launch-prefix="$(arg venv)"/>
+
   <node pkg="tools" name="points_filter" type="points_filter" output="screen"/>
   <node pkg="rosbag" name="bag" type="play" args="--clock /data/bags/2.bag"/>
     <node pkg="fast_lio" type="fastlio_mapping" name="laserMapping" output="screen" /> 

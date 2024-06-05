@@ -13,7 +13,7 @@ print(sys.path)
 
 def callback_image(data):
     rospy.loginfo("data from image topic")
-    print(data.data)
+    # print(data.data)
 
 
 def main():
